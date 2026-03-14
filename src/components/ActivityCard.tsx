@@ -1,4 +1,4 @@
-import { MapPin, Baby, Users, ExternalLink, Share2, Check, UserPlus } from "lucide-react";
+import { MapPin, Baby, Users, ExternalLink, Share2, Check, UserPlus, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -33,7 +33,7 @@ export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityC
   };
 
   const handleShare = async () => {
-    const shareText = `🌟 ${activity.title}\n${activity.description}\n\n📍 地址：${activity.location_address}\n🔗 地图：${activity.google_maps_url}\n\n—— 发现自 BayAreaKids`;
+    const shareText = `🌟 ${activity.title}${activity.event_time ? `\n⏰ 时间：${activity.event_time}` : ''}\n${activity.description}\n\n📍 地址：${activity.location_address}\n🔗 地图：${activity.google_maps_url}\n\n—— 发现自 BayAreaKids`;
     
     try {
       await navigator.clipboard.writeText(shareText);
@@ -53,11 +53,16 @@ export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityC
             alt={activity.title}
             className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
           />
-          {isGoing && (
-            <div className="absolute top-2 left-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center shadow-lg">
-              <Check className="w-3 h-3 mr-1" /> YOU ARE GOING
-            </div>
-          )}
+          <div className="absolute top-2 right-2 flex flex-col gap-1 items-end">
+            <Badge className="bg-white/90 text-primary border-none shadow-sm backdrop-blur-sm text-[10px] font-bold">
+              {activity.city}
+            </Badge>
+            {isGoing && (
+              <div className="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center shadow-lg">
+                <Check className="w-3 h-3 mr-1" /> YOU ARE GOING
+              </div>
+            )}
+          </div>
         </div>
       )}
       <CardHeader className="p-4 pb-2">
@@ -88,6 +93,15 @@ export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityC
             {copied ? <Check className="w-4 h-4 text-green-600" /> : <Share2 className="w-4 h-4" />}
           </Button>
         </div>
+        
+        {/* Event Time for Activities */}
+        {activity.event_time && (
+          <div className="flex items-center text-xs font-bold text-amber-600 mt-1 bg-amber-50 w-fit px-2 py-0.5 rounded-md">
+            <Clock className="w-3 h-3 mr-1" />
+            {activity.event_time}
+          </div>
+        )}
+
         <a 
           href={activity.google_maps_url} 
           target="_blank" 

@@ -77,6 +77,7 @@ export default function Home() {
 
   const categories = [
     { name: "All", icon: null },
+    { name: "Activity", icon: <Clock className="w-3 h-3 mr-1" /> },
     { name: "Park", icon: <Trees className="w-3 h-3 mr-1" /> },
     { name: "Hiking", icon: <Compass className="w-3 h-3 mr-1" /> },
     { name: "Library", icon: <BookOpen className="w-3 h-3 mr-1" /> },
