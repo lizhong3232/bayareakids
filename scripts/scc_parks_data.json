@@ -1,0 +1,705 @@
+[
+  {
+    "id": "scc-official-4",
+    "title": "Almaden Quicksilver",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "San Jose",
+    "location_address": "21785 Almaden Rd., San Jose, CA 95120",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Almaden+Quicksilver+San+Jose",
+    "lat": 37.166107626589,
+    "lng": -121.826296211429,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-16",
+    "title": "Alviso Marina",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "1195 Hope , San Jose, CA 95111",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Alviso+Marina+San+Jose",
+    "lat": 37.4295089997573,
+    "lng": -121.979056600147,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-17",
+    "title": "Anderson Lake",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Morgan Hill",
+    "location_address": "19245 Malaguerra Ave., Morgan Hill, CA 95037",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Anderson+Lake+Morgan+Hill",
+    "lat": 37.1344347867172,
+    "lng": -121.578601722943,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-28",
+    "title": "Calero",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "23201 McKean Rd., San Jose, CA 95120",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Calero+San+Jose",
+    "lat": 37.1823591387062,
+    "lng": -121.761655586605,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-8",
+    "title": "Chesbro Reservoir",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Morgan Hill",
+    "location_address": "17655 Oak Glen Rd., Morgan Hill, CA 95037",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chesbro+Reservoir+Morgan+Hill",
+    "lat": 37.1243458945311,
+    "lng": -121.716799474278,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-9",
+    "title": "Chitactac-Adams",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Gilroy",
+    "location_address": "10001 Watsonville Rd., Gilroy, CA 95020",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chitactac-Adams+Gilroy",
+    "lat": 37.0313633944336,
+    "lng": -121.656977939425,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-34",
+    "title": "Church and New Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Gilroy",
+    "location_address": "Church Avenue, Gilroy, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Church+and+New+Property+Gilroy",
+    "lat": 37.0817665272554,
+    "lng": -121.560777385503,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-25",
+    "title": "Coyote Creek Parkway - North",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "",
+    "location_address": "CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coyote+Creek+Parkway+-+North+",
+    "lat": 37.2348254074496,
+    "lng": -121.761032565799,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-24",
+    "title": "Coyote Creek Parkway - South",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "",
+    "location_address": "CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coyote+Creek+Parkway+-+South+",
+    "lat": 37.1655330362268,
+    "lng": -121.65946302242,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-10",
+    "title": "Coyote Lake-Harvey Bear Ranch",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Gilroy",
+    "location_address": "10840 Coyote Reservoir Rd., Gilroy, CA 95020",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coyote+Lake-Harvey+Bear+Ranch+Gilroy",
+    "lat": 37.0533852494666,
+    "lng": -121.527322061668,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-5",
+    "title": "Ed R. Levin",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Milpitas",
+    "location_address": "3100 Calaveras Rd., Milpitas, CA 95035",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ed+R.+Levin+Milpitas",
+    "lat": 37.4452823534345,
+    "lng": -121.858282581252,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-18",
+    "title": "Field Sports Park",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "9580 Malech Rd., San Jose, CA 95013",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Field+Sports+Park+San+Jose",
+    "lat": 37.2201760645948,
+    "lng": -121.732605352894,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-26",
+    "title": "Hellyer",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "985 Hellyer Ave., San Jose, CA 95111",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hellyer+San+Jose",
+    "lat": 37.2841868777941,
+    "lng": -121.811829314973,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-3",
+    "title": "Joseph D. Grant",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "18405 Mt. Hamilton Rd., San Jose, CA 95140",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Joseph+D.+Grant+San+Jose",
+    "lat": 37.3421658579653,
+    "lng": -121.722061046473,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-23",
+    "title": "Lexington Reservoir",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Los Gatos",
+    "location_address": "17770 Alma Bridge Rd., Los Gatos, CA 95032",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lexington+Reservoir+Los+Gatos",
+    "lat": 37.1944098332348,
+    "lng": -121.99485523413,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-19",
+    "title": "Los Gatos Creek",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "Campbell",
+    "location_address": "1250 Dell Ave., Campbell, CA 95008",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Los+Gatos+Creek+Campbell",
+    "lat": 37.2586975762621,
+    "lng": -121.961112585273,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-29",
+    "title": "Martial Cottle",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "5283 Snell Ave., San Jose, CA 95136",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Martial+Cottle+San+Jose",
+    "lat": 37.2658371553101,
+    "lng": -121.831483604136,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-31",
+    "title": "Moody Gulch Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "South Bay",
+    "location_address": "None, South Bay, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Moody+Gulch+Property+South+Bay",
+    "lat": 37.1540088627374,
+    "lng": -121.98330395067,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-20",
+    "title": "Motorcycle",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "300 Metcalf Rd., San Jose, CA 95138",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Motorcycle+San+Jose",
+    "lat": 37.2365996838057,
+    "lng": -121.719527203712,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-11",
+    "title": "Mt. Madonna",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Watsonville",
+    "location_address": "7850 Pole Line Rd., Watsonville, CA 95076",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mt.+Madonna+Watsonville",
+    "lat": 37.0074407767597,
+    "lng": -121.721974316087,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-36",
+    "title": "New Almaden Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "South Bay",
+    "location_address": "None, South Bay, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=New+Almaden+Property+South+Bay",
+    "lat": 37.173404390019,
+    "lng": -121.823130122627,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-6",
+    "title": "Penitencia Creek",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "San Jose",
+    "location_address": "Maybury & Jackson Ave., San Jose, CA 95112",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Penitencia+Creek+San+Jose",
+    "lat": 37.3696845645935,
+    "lng": -121.867975652021,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-21",
+    "title": "Rancho San Antonio",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Cupertino",
+    "location_address": "22500 Cristo Rey Drive, Cupertino, CA 95014",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rancho+San+Antonio+Cupertino",
+    "lat": 37.3323586048467,
+    "lng": -122.074990282448,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-0",
+    "title": "Sanborn",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Saratoga",
+    "location_address": "16055 Sanborn Rd., Saratoga, CA 95070",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sanborn+Saratoga",
+    "lat": 37.2350356559576,
+    "lng": -122.06052853804,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-33",
+    "title": "Sanborn Road Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "South Bay",
+    "location_address": "None, South Bay, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sanborn+Road+Property+South+Bay",
+    "lat": 37.2314214783108,
+    "lng": -122.054409913846,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-22",
+    "title": "Santa Teresa",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "260 Bernal Rd., San Jose, CA 95119",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Santa+Teresa+San+Jose",
+    "lat": 37.2010055123119,
+    "lng": -121.796338065927,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-27",
+    "title": "Silveira Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Morgan Hill",
+    "location_address": "Atherton Wy., Morgan Hill, CA 95037",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Silveira+Property+Morgan+Hill",
+    "lat": 37.0964148045466,
+    "lng": -121.622167479608,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-12",
+    "title": "Stevens Creek",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "Cupertino",
+    "location_address": "11401 Stevens Canyon Rd., Cupertino, CA 95014",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Stevens+Creek+Cupertino",
+    "lat": 37.2719987657301,
+    "lng": -122.086280195123,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-1",
+    "title": "Stuart Ridge Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Saratoga",
+    "location_address": "14681 Bohlman Rd., Saratoga, CA 95070",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Stuart+Ridge+Property+Saratoga",
+    "lat": 37.235241350821,
+    "lng": -122.049951768097,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-32",
+    "title": "Summit Road Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "South Bay",
+    "location_address": "None, South Bay, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Summit+Road+Property+South+Bay",
+    "lat": 37.1285840331536,
+    "lng": -121.940252721074,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-30",
+    "title": "Sunnyvale Baylands",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "",
+    "location_address": "CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sunnyvale+Baylands+",
+    "lat": 37.4176708429683,
+    "lng": -121.987235121808,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-35",
+    "title": "Tulare Hill Property",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "San Jose",
+    "location_address": "San Jose, CA",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tulare+Hill+Property+San+Jose",
+    "lat": 37.2254850008638,
+    "lng": -121.760233747694,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-13",
+    "title": "Upper Stevens Creek",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Hiking",
+    "city": "Palo Alto",
+    "location_address": "Skyline Blvd., Palo Alto, CA 94034",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Upper+Stevens+Creek+Palo+Alto",
+    "lat": 37.2883900004653,
+    "lng": -122.152496516858,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-14",
+    "title": "Uvas Canyon",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Morgan Hill",
+    "location_address": "8515 Croy Rd., Morgan Hill, CA 95037",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Uvas+Canyon+Morgan+Hill",
+    "lat": 37.0869371762708,
+    "lng": -121.796901758117,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-15",
+    "title": "Uvas Reservoir",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Morgan Hill",
+    "location_address": "14200 Uvas Rd., Morgan Hill, CA 95037",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Uvas+Reservoir+Morgan+Hill",
+    "lat": 37.0795117762802,
+    "lng": -121.689749175843,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-7",
+    "title": "Vasona",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Los Gatos",
+    "location_address": "333 Blossom Hill Rd., Los Gatos, CA 95032",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vasona+Los+Gatos",
+    "lat": 37.2376740613917,
+    "lng": -121.974510095402,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  },
+  {
+    "id": "scc-official-2",
+    "title": "Villa Montalvo",
+    "description": "Official Santa Clara County regional park. One of the 37 protected natural spaces managed by the county for public recreation.",
+    "category": "Park",
+    "city": "Saratoga",
+    "location_address": "15400 Montalvo Rd., Saratoga, CA 95070",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Villa+Montalvo+Saratoga",
+    "lat": 37.2457376543193,
+    "lng": -122.032428678297,
+    "tags": [
+      "Official",
+      "County Park",
+      "Public"
+    ],
+    "min_age": 1,
+    "max_age": 12,
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+  }
+]
