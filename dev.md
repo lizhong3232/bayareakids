@@ -32,9 +32,28 @@
   - Verified the production build using `npm run build`.
   - Started the development server for real-time preview.
 
+## Phase 2: Interactivity & Automation (Completed)
+
+### 2026-03-14: Real-time Data & Enhanced UX
+- **Distance Sorting**:
+  - Implemented Haversine formula for mile-based distance calculation.
+  - Added Zip Code input in the header with coordinate mapping for the entire Bay Area.
+- **Local Check-in System**:
+  - Created a persistence layer using `localStorage` to save user's "Going" status.
+  - Added immediate UI feedback: green high-contrast borders and "YOU ARE GOING" labels.
+- **Social Sharing**:
+  - Added a "Share" button that copies a pre-formatted invitation text (Title, Desc, Google Maps link) to the clipboard.
+- **Automated Scraper (`scripts/scraper.py`)**:
+  - Built a Python scraper using `BeautifulSoup` to fetch real-time events from **510 Families**.
+  - Implemented browser-mimicking headers to bypass 403 restrictions.
+  - Added an auto-injection logic that updates `src/lib/mock-data.ts` programmatically.
+- **GitHub Automation**:
+  - Configured `.github/workflows/daily_update.yml` to run the scraper every 24 hours.
+  - Configured `.github/workflows/deploy.yml` for automatic Next.js static export to GitHub Pages.
+
 ---
 
 ### Current Status:
 - [x] Phase 1: Static Discovery & UI Framework
-- [ ] Phase 2: Supabase Auth & Check-in Logic
-- [ ] Phase 3: Matching & Connection Notifications
+- [x] Phase 2: Interactivity, Distance Sorting & Sharing
+- [x] Phase 3: Daily Scraper & Auto-Update Infrastructure

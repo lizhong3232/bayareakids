@@ -21,12 +21,19 @@ function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [activeCity, setActiveCity] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [zipCode, setZipCode] = useState("");
 
   const userCoords = useMemo(() => {
     return ZIP_COORDINATES[zipCode] || null;
   }, [zipCode]);
+
+  // Extract unique cities for the filter
+  const cities = useMemo(() => {
+    const uniqueCities = Array.from(new Set(MOCK_ACTIVITIES.map(a => a.city)));
+    return ["All", ...uniqueCities.sort()];
+  }, []);
 
   const filteredAndSortedActivities = useMemo(() => {
     let result = MOCK_ACTIVITIES.map(activity => {
@@ -44,27 +51,32 @@ export default function Home() {
       return matchesCategory;
     });
 
-    // 2. Filter by Search Query
+    // 2. Filter by City
+    if (activeCity !== "All") {
+      result = result.filter(activity => activity.city === activeCity);
+    }
+
+    // 3. Filter by Search Query
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       result = result.filter(activity => 
         activity.title.toLowerCase().includes(q) ||
         activity.description.toLowerCase().includes(q) ||
+        activity.city.toLowerCase().includes(q) ||
         activity.tags.some(tag => tag.toLowerCase().includes(q))
       );
     }
 
-    // 3. Sort by distance if available, otherwise stay original
+    // 4. Sort by distance if available
     if (userCoords) {
       result.sort((a, b) => (a.distance || 0) - (b.distance || 0));
     }
 
     return result;
-  }, [activeCategory, searchQuery, userCoords]);
+  }, [activeCategory, activeCity, searchQuery, userCoords]);
 
   const categories = [
     { name: "All", icon: null },
-    { name: "Shade", icon: <Sun className="w-3 h-3 mr-1" /> },
     { name: "Park", icon: <Trees className="w-3 h-3 mr-1" /> },
     { name: "Hiking", icon: <Compass className="w-3 h-3 mr-1" /> },
     { name: "Library", icon: <BookOpen className="w-3 h-3 mr-1" /> },
@@ -83,7 +95,6 @@ export default function Home() {
             <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">Activity Scout & Playdates</p>
           </div>
           
-          {/* Zip Code Input */}
           <div className="flex items-center bg-secondary/30 rounded-full px-3 py-1.5 border border-transparent focus-within:border-primary/20 transition-all">
             <MapPin className="w-3 h-3 text-primary mr-1.5" />
             <input 
@@ -97,18 +108,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Search & Quick Filters */}
         <div className="flex flex-col gap-3">
           <div className="relative group">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground group-focus-within:text-primary transition-colors" />
             <input
               type="text"
-              placeholder="Search parks, trails, or tags..."
+              placeholder="Search parks, cities, or tags..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2 bg-secondary/30 rounded-full text-sm border-transparent focus:border-primary/30 focus:bg-white focus:ring-4 focus:ring-primary/5 outline-none transition-all"
             />
           </div>
+
+          {/* Category Filter */}
           <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
             {categories.map((cat) => (
               <Badge
@@ -126,6 +138,25 @@ export default function Home() {
               </Badge>
             ))}
           </div>
+
+          {/* City Filter (New) */}
+          <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+            <span className="text-[10px] font-bold text-muted-foreground uppercase flex items-center pr-1">City:</span>
+            {cities.map((city) => (
+              <Badge
+                key={city}
+                variant={activeCity === city ? "secondary" : "outline"}
+                onClick={() => setActiveCity(city)}
+                className={`rounded-full px-3 py-0.5 text-[10px] cursor-pointer whitespace-nowrap transition-all ${
+                  activeCity === city 
+                    ? "bg-secondary text-secondary-foreground border-none" 
+                    : "bg-white border-secondary/30 text-muted-foreground"
+                }`}
+              >
+                {city}
+              </Badge>
+            ))}
+          </div>
         </div>
       </header>
 
@@ -133,17 +164,13 @@ export default function Home() {
       <section className="px-6 py-6">
         <div className="flex justify-between items-end mb-6">
           <div>
-            <h2 className="text-xl font-bold tracking-tight text-foreground/90">
-              {activeCategory === "All" ? "Recommended for " : `${activeCategory} in `}
-              <span className="text-primary underline decoration-secondary decoration-4 underline-offset-4">Today</span>
+            <h2 className="text-xl font-bold tracking-tight text-foreground/90 leading-tight">
+              {activeCategory === "All" ? "Recommended " : `${activeCategory} `}
+              {activeCity !== "All" && <span className="text-muted-foreground font-medium">in {activeCity}</span>}
+              <br />
+              <span className="text-primary underline decoration-secondary decoration-4 underline-offset-4 text-lg">Scouted for Today</span>
             </h2>
-            {userCoords && (
-              <p className="text-[10px] text-muted-foreground mt-1 font-medium italic">Sorting by distance from {zipCode}</p>
-            )}
           </div>
-          <span className="text-xs font-medium text-primary bg-primary/5 px-2 py-1 rounded-md">
-            {ZIP_COORDINATES[zipCode] ? `Near Zip ${zipCode}` : "South Bay, CA"}
-          </span>
         </div>
 
         {filteredAndSortedActivities.length > 0 ? (
@@ -151,7 +178,7 @@ export default function Home() {
             {filteredAndSortedActivities.map((activity) => (
               <ActivityCard
                 key={activity.id}
-                activity={activity}
+                activity={{...activity, checkInCount: (parseInt(activity.id) * 7) % 12 + 1}} // Fixed deterministic count
                 checkInCount={(parseInt(activity.id) * 7) % 12 + 1}
                 distance={activity.distance}
               />
@@ -159,12 +186,12 @@ export default function Home() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-muted-foreground">No activities found matching your filters.</p>
+            <p className="text-muted-foreground">No matches found in {activeCity}.</p>
             <button 
-              onClick={() => {setActiveCategory("All"); setSearchQuery(""); setZipCode("");}}
+              onClick={() => {setActiveCategory("All"); setActiveCity("All"); setSearchQuery(""); setZipCode("");}}
               className="text-primary font-bold mt-2 underline"
             >
-              Clear all filters
+              Reset all filters
             </button>
           </div>
         )}

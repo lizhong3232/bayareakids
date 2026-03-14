@@ -1,4 +1,5 @@
-import { MapPin, Baby, Users, ExternalLink } from "lucide-react";
+import { MapPin, Baby, Users, ExternalLink, Share2, Check, UserPlus } from "lucide-react";
+import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,15 +12,52 @@ interface ActivityCardProps {
 }
 
 export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityCardProps) {
+  const [copied, setCopied] = useState(false);
+  const [isGoing, setIsGoing] = useState(false);
+  const [localCount, setLocalCount] = useState(checkInCount);
+
+  // Load check-in status from localStorage on mount
+  useEffect(() => {
+    const savedStatus = localStorage.getItem(`going-${activity.id}`);
+    if (savedStatus === 'true') {
+      setIsGoing(true);
+      setLocalCount(checkInCount + 1);
+    }
+  }, [activity.id, checkInCount]);
+
+  const handleCheckIn = () => {
+    const newStatus = !isGoing;
+    setIsGoing(newStatus);
+    setLocalCount(prev => newStatus ? prev + 1 : prev - 1);
+    localStorage.setItem(`going-${activity.id}`, String(newStatus));
+  };
+
+  const handleShare = async () => {
+    const shareText = `🌟 ${activity.title}\n${activity.description}\n\n📍 地址：${activity.location_address}\n🔗 地图：${activity.google_maps_url}\n\n—— 发现自 BayAreaKids`;
+    
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy!", err);
+    }
+  };
+
   return (
-    <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow bg-card/50">
+    <Card className={`overflow-hidden border-2 transition-all duration-300 bg-card/50 ${isGoing ? 'border-primary shadow-lg scale-[1.02]' : 'border-transparent shadow-md hover:shadow-lg'}`}>
       {activity.image_url && (
-        <div className="h-40 w-full overflow-hidden bg-muted">
+        <div className="h-40 w-full overflow-hidden bg-muted relative">
           <img
             src={activity.image_url}
             alt={activity.title}
             className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
           />
+          {isGoing && (
+            <div className="absolute top-2 left-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center shadow-lg">
+              <Check className="w-3 h-3 mr-1" /> YOU ARE GOING
+            </div>
+          )}
         </div>
       )}
       <CardHeader className="p-4 pb-2">
@@ -39,7 +77,17 @@ export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityC
             </div>
           </div>
         </div>
-        <CardTitle className="text-xl font-bold leading-tight">{activity.title}</CardTitle>
+        <div className="flex justify-between items-start gap-2">
+          <CardTitle className="text-xl font-bold leading-tight">{activity.title}</CardTitle>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="h-8 w-8 rounded-full shrink-0 text-muted-foreground hover:text-primary hover:bg-primary/5"
+            onClick={handleShare}
+          >
+            {copied ? <Check className="w-4 h-4 text-green-600" /> : <Share2 className="w-4 h-4" />}
+          </Button>
+        </div>
         <a 
           href={activity.google_maps_url} 
           target="_blank" 
@@ -64,12 +112,21 @@ export function ActivityCard({ activity, checkInCount = 0, distance }: ActivityC
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between items-center">
-        <div className="flex items-center text-primary font-semibold text-sm">
+        <div className={`flex items-center font-semibold text-sm transition-colors ${isGoing ? 'text-primary' : 'text-muted-foreground'}`}>
           <Users className="w-4 h-4 mr-1.5" />
-          <span>{checkInCount} parents going</span>
+          <span>{localCount} parents going</span>
         </div>
-        <Button size="sm" className="rounded-full px-4 font-semibold shadow-sm">
-          Check-in
+        <Button 
+          size="sm" 
+          onClick={handleCheckIn}
+          variant={isGoing ? "default" : "outline"}
+          className={`rounded-full px-4 font-semibold shadow-sm transition-all ${isGoing ? 'bg-primary' : 'border-primary text-primary hover:bg-primary/5'}`}
+        >
+          {isGoing ? (
+            <><Check className="w-4 h-4 mr-1" /> Going</>
+          ) : (
+            <><UserPlus className="w-4 h-4 mr-1" /> Check-in</>
+          )}
         </Button>
       </CardFooter>
     </Card>
