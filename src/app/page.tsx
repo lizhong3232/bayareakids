@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { MOCK_ACTIVITIES, Activity, ZIP_COORDINATES } from "@/lib/mock-data";
 import { ActivityCard } from "@/components/ActivityCard";
 import { Badge } from "@/components/ui/badge";
-import { Search, Filter, Sun, Trees, BookOpen, Users, Compass, MapPin } from "lucide-react";
+import { Search, Filter, Sun, Trees, BookOpen, Users, Compass, MapPin, Clock } from "lucide-react";
 
 // Haversine formula to calculate distance in miles
 function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
@@ -176,14 +176,17 @@ export default function Home() {
 
         {filteredAndSortedActivities.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredAndSortedActivities.map((activity) => (
-              <ActivityCard
-                key={activity.id}
-                activity={{...activity, checkInCount: (parseInt(activity.id) * 7) % 12 + 1}} // Fixed deterministic count
-                checkInCount={(parseInt(activity.id) * 7) % 12 + 1}
-                distance={activity.distance}
-              />
-            ))}
+            {filteredAndSortedActivities.map((activity) => {
+              const deterministicCount = (activity.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) * 7) % 12 + 1;
+              return (
+                <ActivityCard
+                  key={activity.id}
+                  activity={activity}
+                  checkInCount={deterministicCount}
+                  distance={activity.distance}
+                />
+              );
+            })}
           </div>
         ) : (
           <div className="text-center py-20">
